@@ -97,7 +97,7 @@ export const spawn = (thing) => {
     broccoli.scale.set(0.05, 0.05, 0.05);
     obj.mesh = broccoli;
     //obj.sound = sounds.snare;
-    //obj.mass = 3;
+    obj.mass = 3;
     //obj.rDamp = 0.01 + Math.random() * 0.03;
   }
 

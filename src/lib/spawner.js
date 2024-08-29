@@ -39,7 +39,7 @@ export const spawn = (thing) => {
   if (thing === "hotdog") {
     let hotdog = models.hotdog.clone();
     // hotdog.rotation.set(0, Math.random() * 10, 0);
-    hotdog.scale.set(0.035, 0.035, 0.035);
+    hotdog.scale.set(0.04, 0.04, 0.04);
     obj.mesh = hotdog;
     obj.sound = sounds.squelch;
     obj.mass = 2;
@@ -97,7 +97,7 @@ export const spawn = (thing) => {
   if (thing === "broccoli") {
     let broccoli = models.broccoli.clone();
     //broccoli.rotation.set(0, Math.random() * 10, 0);
-    broccoli.scale.set(0.035, 0.035, 0.035);
+    broccoli.scale.set(0.03, 0.03, 0.03);
     obj.mesh = broccoli;
     obj.mass = 3;
     //obj.rDamp = 0.01 + Math.random() * 0.03;
@@ -107,7 +107,7 @@ export const spawn = (thing) => {
   if (thing === "laser") {
     let laser = models.laser.clone();
     // laser.rotation.set(0, Math.random() * 10, 0);
-    laser.scale.set(0.035, 0.035, 0.035);
+    laser.scale.set(0.04, 0.04, 0.04);
     obj.mesh = laser;
     // obj.sound = sounds.laser;
     obj.mass = 3;

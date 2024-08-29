@@ -16,7 +16,7 @@ export class Bouncer {
       src: [obj.sound],
     });
 
-    this.mesh.castShadow = true;
+    this.mesh.castShadow = false;
     this.mesh.position.copy(pos);
 
     this.mesh.position.y = height;

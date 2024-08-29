@@ -60,7 +60,7 @@ let floater = null;
 let bouncers = [];
 
 // set gravity
-// const gravity = new THREE.Vector3(0, -0.01, 0);
+const gravity = new THREE.Vector3(0, -0.01, 0);
 
 const init = () => {
   container = document.createElement("div");

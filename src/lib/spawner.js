@@ -42,6 +42,7 @@ export const spawn = (thing) => {
     hotdog.scale.set(0.04, 0.04, 0.04);
     obj.mesh = hotdog;
     //added this
+    obj.mesh.material.set(basic);
     obj.mesh.material.color.set(0xffffff);
     //end of added this
     obj.sound = sounds.squelch;

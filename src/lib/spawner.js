@@ -41,10 +41,6 @@ export const spawn = (thing) => {
     // hotdog.rotation.set(0, Math.random() * 10, 0);
     hotdog.scale.set(0.04, 0.04, 0.04);
     obj.mesh = hotdog;
-    //added this
-    obj.mesh.material.set(basic);
-    obj.mesh.material.color.set(0xffffff);
-    //end of added this
     obj.sound = sounds.squelch;
     obj.mass = 2;
     // obj.rDamp = 0.01 + Math.random() * 0.03;

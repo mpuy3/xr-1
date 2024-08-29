@@ -35,13 +35,15 @@ const modelLoader = (url) => {
 export const spawn = (thing) => {
   let obj = {};
 
+  //diamond
   if (thing === "hotdog") {
     let hotdog = models.hotdog.clone();
-    hotdog.rotation.set(0, Math.random() * 10, 0);
+    // hotdog.rotation.set(0, Math.random() * 10, 0);
+    hotdog.scale.set(0.035, 0.035, 0.035);
     obj.mesh = hotdog;
     obj.sound = sounds.squelch;
     obj.mass = 2;
-    obj.rDamp = 0.01 + Math.random() * 0.03;
+    // obj.rDamp = 0.01 + Math.random() * 0.03;
   }
 
   if (thing === "pong") {
@@ -80,14 +82,15 @@ export const spawn = (thing) => {
     obj.mass = 3;
     obj.rDamp = 0.01 + Math.random() * 0.02;
   }
-
+  //graphene
   if (thing === "hammer") {
     let hammer = models.hammer.clone();
-    hammer.rotation.set(0, Math.random() * 10, 0);
+    // hammer.rotation.set(0, Math.random() * 10, 0);
+    hammer.scale.set(0.035, 0.035, 0.035);
     obj.mesh = hammer;
     obj.sound = sounds.kick;
     obj.mass = 3;
-    obj.rDamp = 0.01 + Math.random() * 0.02;
+    // obj.rDamp = 0.01 + Math.random() * 0.02;
   }
 
   //This is the carbon nanotube
@@ -100,13 +103,15 @@ export const spawn = (thing) => {
     //obj.rDamp = 0.01 + Math.random() * 0.03;
   }
 
+  //buckyball
   if (thing === "laser") {
     let laser = models.laser.clone();
-    laser.rotation.set(0, Math.random() * 10, 0);
+    // laser.rotation.set(0, Math.random() * 10, 0);
+    laser.scale.set(0.035, 0.035, 0.035);
     obj.mesh = laser;
-    obj.sound = sounds.laser;
+    // obj.sound = sounds.laser;
     obj.mass = 3;
-    obj.rDamp = 0.01 + Math.random() * 0.03;
+    // obj.rDamp = 0.01 + Math.random() * 0.03;
   }
 
   return obj;

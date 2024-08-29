@@ -95,9 +95,8 @@ export const spawn = (thing) => {
     let broccoli = models.broccoli.clone();
     //broccoli.rotation.set(0, Math.random() * 10, 0);
     broccoli.scale.set(0.035, 0.035, 0.035);
-    broccoli.material.color.set(0xFFB6C1);
+    // broccoli.material.color.set(0xFFB6C1);
     obj.mesh = broccoli;
-    broccoli.material.color.set(0xFFB6C1);
     //obj.sound = sounds.snare;
     obj.mass = 3;
     //obj.rDamp = 0.01 + Math.random() * 0.03;

@@ -90,14 +90,15 @@ export const spawn = (thing) => {
     obj.rDamp = 0.01 + Math.random() * 0.02;
   }
 
+  //This is the carbon nanotube
   if (thing === "broccoli") {
     let broccoli = models.broccoli.clone();
-    broccoli.rotation.set(0, Math.random() * 10, 0);
-    broccoli.scale.set(0.1, 0.1, 0.1);
+    //broccoli.rotation.set(0, Math.random() * 10, 0);
+    broccoli.scale.set(0.05, 0.05, 0.05);
     obj.mesh = broccoli;
-    obj.sound = sounds.snare;
-    obj.mass = 3;
-    obj.rDamp = 0.01 + Math.random() * 0.03;
+    //obj.sound = sounds.snare;
+    //obj.mass = 3;
+    //obj.rDamp = 0.01 + Math.random() * 0.03;
   }
 
   if (thing === "laser") {

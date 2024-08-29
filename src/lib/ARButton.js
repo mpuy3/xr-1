@@ -82,7 +82,7 @@ class ARButton {
       element.style.transform = "rotate(2deg)";
       element.style.background = "transparent";
       element.style.color = "#fff";
-      element.style.font = '21px "Gaegu", cursive';
+      element.style.font = '21px "Lexend"';
       element.style.textAlign = "center";
       element.style.opacity = "1";
       element.style.outline = "none";

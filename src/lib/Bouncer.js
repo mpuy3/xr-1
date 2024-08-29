@@ -17,6 +17,9 @@ export class Bouncer {
     });
 
     this.mesh.castShadow = false;
+    //added this
+    this.mesh.material.color.set(0xffffff);
+    //end of added this
     this.mesh.position.copy(pos);
 
     this.mesh.position.y = height;

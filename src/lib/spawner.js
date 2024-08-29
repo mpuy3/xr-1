@@ -64,6 +64,7 @@ export const spawn = (thing) => {
   if (thing === "duck") {
     let duck = models.duck.clone();
     duck.rotation.set(0, Math.random() * 10, 0);
+    duck.scale.set(0.01, 0.01, 0.01);
     obj.mesh = duck;
     obj.sound = sounds.quack;
     obj.mass = 1;

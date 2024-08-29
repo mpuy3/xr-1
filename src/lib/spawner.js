@@ -61,13 +61,14 @@ export const spawn = (thing) => {
     obj.mass = 1;
   }
 
+  //This is the UP NISMED logo
   if (thing === "duck") {
     let duck = models.duck.clone();
     duck.rotation.set(0, Math.random() * 10, 0);
-    duck.scale.set(0.01, 0.01, 0.01);
+    duck.scale.set(0.1, 0.1, 0.1);
     obj.mesh = duck;
     obj.sound = sounds.quack;
-    obj.mass = 1;
+    obj.mass = 3;
     obj.rDamp = 0.01 + Math.random() * 0.03;
   }
 
@@ -92,6 +93,7 @@ export const spawn = (thing) => {
   if (thing === "broccoli") {
     let broccoli = models.broccoli.clone();
     broccoli.rotation.set(0, Math.random() * 10, 0);
+    broccoli.scale.set(0.1, 0.1, 0.1);
     obj.mesh = broccoli;
     obj.sound = sounds.snare;
     obj.mass = 3;

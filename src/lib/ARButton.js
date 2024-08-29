@@ -19,7 +19,7 @@ class ARButton {
       function onSessionEnded(/*event*/) {
         currentSession.removeEventListener("end", onSessionEnded);
 
-        button.textContent = "START AR!";
+        button.textContent = "Explore Carbons Allotropes!";
 
         currentSession = null;
       }
@@ -32,7 +32,7 @@ class ARButton {
       button.style.left = "calc(50% - 50px)";
       button.style.width = "110px";
 
-      button.textContent = "START AR!";
+      button.textContent = "Explore Carbon Allotropes!";
 
       button.onmouseenter = function () {
         button.style.opacity = "1.0";

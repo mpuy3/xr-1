@@ -16,7 +16,7 @@ export class Bouncer {
       src: [obj.sound],
     });
 
-    this.mesh.castShadow = false;
+    this.mesh.castShadow = true;
     this.mesh.position.copy(pos);
 
     this.mesh.position.y = height;
@@ -37,12 +37,12 @@ export class Bouncer {
     // this.rDamp = obj.rDamp;
   }
 
-  applyForce(force) {
-    // newton
-    // let f = force.clone();
-    // f.divideScalar(this.mass);
-    // this.acc.add(f);
-  }
+  // applyForce(force) {
+  //   // newton
+  //   // let f = force.clone();
+  //   // f.divideScalar(this.mass);
+  //   // this.acc.add(f);
+  // }
 
   update() {
     //position

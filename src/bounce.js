@@ -354,7 +354,7 @@ function render(timestamp, frame) {
 
     // update bouncers
     for (let i = 0; i < bouncers.length; i++) {
-      bouncers[i].applyForce(gravity);
+      // bouncers[i].applyForce(gravity);
       bouncers[i].update();
     }
   }

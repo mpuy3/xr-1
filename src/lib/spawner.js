@@ -78,7 +78,7 @@ export const spawn = (thing) => {
     let moka = models.moka.clone();
     moka.rotation.set(0, Math.random() * 10, 0);
     moka.scale.set(0.1, 0.1, 0.1);
-    // obj.mesh = moka;
+    obj.mesh = moka;
     obj.sound = sounds.bling;
     obj.mass = 3;
     obj.rDamp = 0.01 + Math.random() * 0.02;

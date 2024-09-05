@@ -47,18 +47,11 @@ export const spawn = (thing) => {
   }
 
   if (thing === "pong") {
-    if (Math.random() > 0.05) {
-      const g = new THREE.SphereBufferGeometry(0.05, 16, 16);
-      const m = new THREE.MeshLambertMaterial({ color: 0xcccccc });
-      obj.mesh = new THREE.Mesh(g, m);
-      obj.rDamp = 0;
-    } else {
-      // spawn super secret oio bonus paddle
-      let paddle = models.paddle.clone();
-      paddle.rotation.set(0, Math.random() * 10, 0);
-      obj.mesh = paddle;
-      obj.rDamp = 0.01 + Math.random() * 0.01;
-    }
+    let paddle = models.paddle.clone();
+    // paddle.rotation.set(0, Math.random() * 10, 0);
+    obj.mesh = paddle;
+    // obj.rDamp = 0.01 + Math.random() * 0.01;
+    
     obj.sound = sounds.pong;
     obj.mass = 1;
   }

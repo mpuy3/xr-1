@@ -153,7 +153,7 @@ const init = () => {
   document.querySelector(".icon").setAttribute("src", icon);
 
   // splash screen
-  loadMesh(glbSrc.nismed).then((mesh) => {
+  loadMesh(glbSrc.duck).then((mesh) => {
     scene.background = new THREE.Color(0x000000);
     floater = mesh.clone();
     floater.scale.copy(new THREE.Vector3(0.03, 0.03, 0.03));

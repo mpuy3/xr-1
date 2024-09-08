@@ -15,8 +15,11 @@ export const preload = async () => {
   models.moka = await loadMesh(glbs.moka);
   models.broccoli = await loadMesh(glbs.broccoli);
   models.laser = await loadMesh(glbs.laser);
+<<<<<<< HEAD
   models.linear = await loadMesh(glbs.linear);
   models.nismed = await loadMesh(glbs.nismed);
+=======
+>>>>>>> parent of dba2e6e (added linear)
 };
 
 export let loadMesh = async (url) => {
@@ -37,6 +40,7 @@ const modelLoader = (url) => {
 export const spawn = (thing) => {
   let obj = {};
 
+<<<<<<< HEAD
   //linear
   if (thing === "linear") {
     let linear = models.linear.clone();
@@ -48,6 +52,8 @@ export const spawn = (thing) => {
     // obj.rDamp = 0.01 + Math.random() * 0.03;
   }
 
+=======
+>>>>>>> parent of dba2e6e (added linear)
   //diamond
   if (thing === "hotdog") {
     let hotdog = models.hotdog.clone();

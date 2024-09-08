@@ -21,11 +21,15 @@ export class Bouncer {
 
     this.mesh.position.y = height;
     this.bottom = pos.y;
+    // this.rotationLimit = Math.PI * 4;
     this.hasPlayed = true;
 
     // position
     this.vel = new THREE.Vector3();
     this.acc = new THREE.Vector3();
-
   }
+
+  update() {
+  }
+
 }

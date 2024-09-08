@@ -16,6 +16,7 @@ export const preload = async () => {
   models.broccoli = await loadMesh(glbs.broccoli);
   models.laser = await loadMesh(glbs.laser);
   models.linear = await loadMesh(glbs.linear);
+  models.nismed = await loadMesh(glbs.nismed);
 };
 
 export let loadMesh = async (url) => {

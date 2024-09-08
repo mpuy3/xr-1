@@ -40,7 +40,7 @@ export const spawn = (thing) => {
   if (thing === "linear") {
     let linear = models.linear.clone();
     // hotdog.rotation.set(0, Math.random() * 10, 0);
-    linear.scale.set(0.04, 0.04, 0.04);
+    linear.scale.set(0.1, 0.1, 0.1);
     obj.mesh = linear;
     obj.sound = sounds.squelch;
     obj.mass = 2;

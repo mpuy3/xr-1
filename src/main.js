@@ -153,16 +153,16 @@ const init = () => {
   document.querySelector(".icon").setAttribute("src", icon);
 
   // splash screen
-  loadMesh(glbSrc.duck).then((mesh) => {
+  loadMesh(glbSrc.nismed).then((mesh) => {
     scene.background = new THREE.Color(0x000000);
     floater = mesh.clone();
     floater.scale.copy(new THREE.Vector3(0.03, 0.03, 0.03));
     floater.rotation.set(0, 0, 1);
     //Y↑ X→ Z↙
-    floater.position.set(0, -0.7, -0.7);
+    floater.position.set(0, -1, -1);
     camera.lookAt(floater.position);
     scene.add(floater);
-    camera.position.set(0, -0.38, 0);
+    camera.position.set(0, -1, 0);
 
     //hide loader
     document.querySelector(".cool-stuff").classList.remove("hidden");
@@ -184,7 +184,6 @@ function onWindowResize() {
 
 const bomb = () => {
   isUI = true;
-  sounds.explosion.play();
   let explGif = new Image();
 
   // cheap trick to start the gif loop from scratch
@@ -222,7 +221,6 @@ const undo = () => {
     scene.remove(ball.mesh);
     bouncers.pop();
     isUI = true;
-    sounds.undo.play();
   }
 
   // hide ui
@@ -233,13 +231,11 @@ const undo = () => {
 
 const nextIcon = () => {
   iconIndex++;
-  sounds.click.play();
   updateIcon();
 };
 
 const prevIcon = () => {
   iconIndex--;
-  sounds.cluck.play();
   updateIcon();
 };
 

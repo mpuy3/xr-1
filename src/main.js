@@ -74,7 +74,7 @@ const init = () => {
     20
   );
 
-  const light = new THREE.HemisphereLight(0xffffff, 0xbbbbff, 2);
+  const light = new THREE.HemisphereLight( 0xffffbb, 0x080820, 1 );
   light.position.set(0, 1, 0);
   scene.add(light);
 
